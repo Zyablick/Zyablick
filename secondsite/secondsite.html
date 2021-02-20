@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+  <title>Ocean</title>
+  <link rel="shortcut icon" href="seaicon.png">
+  <style>
+    #inspiration {
+      position: absolute;
+      top: 80vh;
+      left:4vw;
+      /* width: 100vw; */
+      z-index: 20;
+      width: 30vw;
+      font-size: 3vw;
+      font-family: sans-serif;
+      color: #03506f;
+      transform: rotate(-40deg);
+    }
+    #inspiration:hover {
+      font-size: 4vw;
+      font-family: fantasy;
+      color: #00917c;
+    }
+
+    #wave {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 100vw;
+      height: 100vw;
+      opacity: .5;
+      z-index: -30;
+    }
+    #dolphin {
+      position: absolute;
+      top: 6vh;
+      left: 8vw;
+      width: 15vw;
+      height: 15vw;
+      z-index: 1;
+
+    }
+    #dolphin:hover {
+      transform: scaleX(-1);
+    }
+
+
+    #a{
+      position: absolute;
+      color: #51adcf;
+      background-color: #00587a;
+      /* text-shadow: 4px 2px 8px #e8ffff; */
+      text-decoration: overline;
+      transform: rotate(-30deg);
+      text-decoration-color: #cae4db;
+      border-bottom: 15px solid #cae4db;
+      width: 40vw;
+      left: 30vw;
+      top: 25vw;
+      font-size: 2vw;
+      font-family: sans-serif;
+      text-align: left;
+      z-index: -2;
+    }
+    #b{
+      position: absolute;
+      color: #835858;
+      background-color: #5eaaa8;
+      text-shadow: 4px 2px 10px #fff0f0;
+      border-bottom: 25px double #0d7377;
+      width: 40vw;
+      transform: rotate(30deg);
+      right: 3vw;
+      top: 50vh;
+      font-size: 1.7vw;
+      font-family: fantasy;
+      font-style: bold;
+      word-spacing: 15px;
+      text-align: right;
+      z-index: -5;
+    }
+    #c {
+      position: absolute;
+      color: #f4ebc1;
+      background-color: #30475e;
+      text-shadow: 12px 2px 10px #fff0f0;
+      border-right: 15px solid #0d7377;
+      width: 9vw;
+      /* height: 40vh; */
+      transform: rotate(30deg);
+      right: 8vw;
+      top: 77vh;
+      font-size: 1.1vw;
+      font-family: helvetica;
+      /* word-spacing: 15px; */
+      letter-spacing: 10px;
+      text-align: center;
+      z-index: -4;
+    }
+    #c:hover{
+      transform: rotate(-10deg);
+      background-color: #583d72;
+    }
+    #d {
+      position: absolute;
+      color: #e0ece4;
+      background-color: #0f4c75;
+      /* text-shadow: 12px 2px 10px #fff0f0; */
+      /* border-right: 15px solid #0d7377; */
+      width: 50vw;
+      /* height: 10vh; */
+      transform: rotate(-37deg);
+      left: 40vw;
+      top: 130vh;
+      font-size: 2vw;
+      font-family: serif;
+      word-spacing: 20px;
+      text-align: center;
+      z-index: -7;
+    }
+    #d:hover{
+      text-decoration: line-through;
+      font-size: 2.4vw;
+      text-decoration-style: dotted;
+
+    }
+    #e{
+      position: fixed;
+      color: #065446;
+      background-color: #64958f;
+      text-shadow: 2px 1px 4px #008891;
+      /* border-top: 8px double #008891; */
+      opacity: 0.85;
+      width: 100vw;
+      /* height: 60vh; */
+      right: 0vw;
+      bottom: 0vh;
+      font-size: 2vw;
+      font-family: Times;
+      font-style: italic;
+      text-align: right;
+      z-index: -1;
+    }
+    #e:hover {
+      text-align: center;
+    }
+    #aa {
+     color: #e8ded2;
+     font-family: fantasy;
+     font-weight: bold;
+    }
+    #aa:hover{
+      font-size: 6vw;
+      font-style: italic;
+    }
+    #ee {
+      font-weight: bolder;
+      font-size: 3vw;
+      text-shadow: 2px 1px 4px #ea5455;
+      font-style: normal;
+    }
+    #bb:hover {
+      font-weight: bold;
+      font-size: 1.9vw;
+      text-shadow: 2px 1px 4px #00917c;
+      font-style: normal;
+      text-align: center;
+      /* transform: rotate(-70deg); */
+      /* z-index: -1; */
+    }
+    /* iframe {
+      position: fixed;
+      width: 50vw;
+      height: 50vh;
+      top: 17vw;
+      left: 40vw;
+      border-radius: 0px 60px 60px 0px;
+      z-index: 10;
+    } */
+    /* video {
+      position: fixed;
+      width: I 15vw;
+      height: 50vh;
+      top: 17vw;
+      left: 7vw;
+      border-radius: 60px 0px 0px 60px;
+      z-index: 11;
+    } */
+    audio {
+      position: fixed;
+      bottom: 2vh;
+      left: 1vw;
+      height: 20px;
+      opacity: 0.3;
+      z-index: 10:
+    }
+  </style>
+</head>
+<body>
+  <a id=inspiration href="https://www.youtube.com/embed/znuqofwvlCM">Find Inspiration</a>
+  <img id=wave src = "wave.jpg">
+  <!-- <img id=dolphin src = "dolphin.png"> -->
+  <a href = "https://www.youtube.com/watch?v=MdRLVgRRce8"><img id=dolphin src="dolphin.png"></a>
+
+  <audio controls autoplay>
+    <source src = "seasound.mp3">
+  </audio>
+
+
+   <!-- https://www.pexels.com/ru-ru/photo/2127969/ -->
+<div id=a> The <span id=aa>Ocean </span>has its silent caves,<br>
+Deep, quiet, and alone;<br>
+Though there be fury on the waves,<br>
+Beneath them there is none.</div>
+
+<div id=b>The awful spiritsof the deep<br>
+Hold their communion there;<br>
+And there are those for whom we weep,<br>
+<span id=bb>The young, the bright, the fair.</span></div>
+
+
+<div id=c>Calmly the wearied seamen rest <br>
+Beneath their own blue sea.<br>
+The ocean solitudes are blest,<br>
+For there is purity.</div>
+
+
+<div id=d>The earth has guilt, the earth has care,<br>
+Unquiet are its graves;<br>
+But peaceful sleep is ever there,<br>
+Beneath the dark blue waves. </div>
+<!-- https://bookriot.com/ocean-poems/ -->
+
+<div id=e><br>“The sea does not like to be <span id=ee>restrained</span>.”  <br> RICK RIORDAN_  </div>
+</body>
+</html>
+<!-- https://www.goodreads.com/quotes/tag/sea -->
+
+  <!-- <iframe src="https://www.youtube.com/embed/eX2qFMC8cFo" autoplay;></iframe>
+  <video controls loop> <source src = "cat.mp4" type = "video/mp4" autoplay;> </video>
