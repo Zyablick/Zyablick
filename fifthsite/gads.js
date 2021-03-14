@@ -1,0 +1,1 @@
+_ads=(typeof _ads==='undefined')?1:_ads+1;
