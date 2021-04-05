@@ -53,3 +53,4 @@ randomlinks[4]="http://www.geocities.com"
 
 function randomlink(){
 window.location=randomlinks[Math.floor(Math.random()*randomlinks.length)]
+}
