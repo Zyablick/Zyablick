@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Endless Meme Scroll </title>
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+  <style type="text/css" media="screen">
+    * { margin: auto; }
+    body {cursor: url("down.svg"), auto;}
+    h1, h3, p { text-align: center; }
+    div.example {  background: #015871; width: 100%; height: 100%; background-image: url("gif.gif"); background-repeat: no-repeat; background-size: cover; }
+    div.example h3 { margin-bottom: 10px; }
+    ul, ol { padding: 0; }
+    li {margin-top: 20px;}
+    #images { width: 98vw; height: 100vh; overflow-x: hidden; text-align: center; list-style: none; }
+    .endless_scroll_loader { position: fixed; top: 10px; right: 1vw; }
+    #top {
+      height: 50px;
+      background-image: url("gif.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0px;
+      margin: 0px;
+      font-size: 2vw;
+      font-family: 'handleeregular';
+      color: white;
+
+
+    }
+    #link {
+      width: 3vw;
+      position: absolute;
+      left: 35vw;
+      top: 0px;
+      cursor: url("up.svg"), auto;
+
+    }
+    @font-face {
+        font-family: 'handleeregular';
+        src: url('handlee-regular-webfont.woff2') format('woff2'),
+             url('handlee-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    audio {
+      position: fixed;
+      bottom: 2vh;
+      left: 1vw;
+      height: 20px;
+      opacity: 0.1;
+      /* z-index: -10: */
+    }
+
+
+  </style>
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.endless-scroll.js"></script>
+  <script type="text/javascript" charset="utf-8">
+
+    $(function() {
+      $('#images').endlessScroll({
+        bottomPixels: 500,
+        fireDelay: 10,
+        callback: function(i) {
+          console.log(i)
+          var last_img = $("ul#images li:last");
+          last_img.after(last_img.prev().prev().prev().prev().prev().prev().prev().clone());
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div id = "top">
+  <p>Endless Meme Scroll</p>
+  <!-- <h3>by <a href="http://fredwu.me/">Fred Wu</a></h3> -->
+  <a  href="generator.html">
+  <img id='link'src="topbutton.svg" alt="topbutton">
+  </a>
+</div>
+
+  <div class="example">
+
+    <ul id="images">
+      <li><img src="memes/1.jpeg" alt="Grass Blades" /></li>
+      <li><img src="memes/2.jpg"  alt="Grass Blades" /></li>
+      <li><img src="memes/3.png" width="650" height="360" alt="Stones" /></li>
+      <li><img src="memes/4.jpg"  alt="Stones" /></li>
+      <li><img src="memes/5.png" width="650" height="460" alt="Sea Mist" /></li>
+      <li><img src="memes/6.jpg"  width="650" height="600" alt="Stones" /></li>
+      <li><img src="memes/7.png" width="650" height="360" alt="Pier" /></li>
+      <li><img src="memes/8.jpg" width="650" height="600" alt="Stones" /></li>
+      <li><img src="memes/9.png" width="650" height="360" alt="Lotus" /></li>
+      <li><img src="memes/10.png"  alt="Lotus" /></li>
+      <li><img src="memes/11.png" width="650" height="400" alt="Mojave" /></li>
+      <li><img src="memes/12.jpg" alt="Lotus" /></li>
+      <li><img src="memes/13.png" width="650" height="360" alt="Lightning" /></li>
+      <li><img src="memes/14.png"  alt="Lotus" /></li>
+      <li><img src="memes/15.png" width="650" height="400" alt="Grass Blades" /></li>
+      <li><img src="memes/16.jpg"  alt="Lotus" /></li>
+      <li><img src="memes/17.png" width="650" height="400" alt="Lotus" /></li>
+      <li><img src="memes/18.webp"  alt="Lotus" /></li>
+      <li><img src="memes/19.png" width="750" height="660" alt="Lotus" /></li>
+      <li><img src="memes/20.jpg" width="550" height="460" alt="Lotus" /></li>
+      <li><img src="memes/21.png" width="550" height="360" alt="Lotus" /></li>
+      <li><img src="memes/22.webp"  alt="Lotus" /></li>
+      <li><img src="memes/23.png" width="550" height="500" alt="Lotus" /></li>
+      <li><img src="memes/24.jpg"  alt="Lotus" /></li>
+      <li><img src="memes/25.png" width="600" height="360" alt="Lotus" /></li>
+      <li><img src="memes/26.webp"  alt="Lotus" /></li>
+      <li><img src="memes/27.png" width="550" height="460" alt="Lotus" /></li>
+      <li><img src="memes/28.jpg"  alt="Lotus" /></li>
+      <li><img src="memes/29.png" width="650" height="400" alt="Lotus" /></li>
+      <li><img src="memes/30.jpg" width="550" height="560" alt="Lotus" /></li>
+      <li><img src="memes/31.png"  alt="Lotus" /></li>
+      <li><img src="memes/32.webp"  alt="Lotus" /></li>
+      <li><img src="memes/33.png"  alt="Lotus" /></li>
+      <li><img src="memes/34.jpg"  alt="Lotus" /></li>
+      <li><img src="memes/35.png" width="550" height="450" alt="Lotus" /></li>
+      <li><img src="memes/36.webp"  alt="Lotus" /></li>
+      <li><img src="memes/37.png" width="550" height="460" alt="Lotus" /></li>
+      <li><img src="memes/38.jpg" width="750" height="650" alt="Lotus" /></li>
+      <li><img src="memes/39.png" width="650" height="650" alt="Lotus" /></li>
+      <li><img src="memes/40.webp"  alt="Lotus" /></li>
+      <li><img src="memes/41.png" width="650" height="500" alt="Lotus" /></li>
+      <li><img src="memes/42.jpg"  alt="Lotus" /></li>
+      <li><img src="memes/43.jpg"  alt="Lotus" /></li>
+      <li><img src="memes/44.webp"  alt="Lotus" /></li>
+      <li><img src="memes/45.jpg"  alt="Lotus" /></li>
+      <li><img src="memes/46.jpg"  alt="Lotus" /></li>
+      <li><img src="memes/47.jpg"  alt="Lotus" /></li>
+      <li><img src="memes/48.webp"  alt="Lotus" /></li>
+      <li><img src="memes/49.jpg"  alt="Lotus" /></li>
+      <li><img src="memes/50.jpg"  alt="Lotus" /></li>
+    </ul>
+    <!-- <a id='link' href="generator.html">
+    <img src="back.svg" alt="HTML tutorial">
+    </a> -->
+  </div>
+  <audio autoplay loop>
+    <source src="ocean.m4a">
+</audio>
+  <!-- <div style="width:100%;height:0;padding-bottom:150%;position:relative;">
+    <iframe src="https://giphy.com/embed/ET5QsE8329VM4" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen>
+    </iframe></div> -->
+    <!-- <p>
+      <a href="https://giphy.com/gifs/beautiful-cinemagraph-place-ET5QsE8329VM4">via GIPHY</a></p> -->
+
+  <!-- <div class="example">
+    <p>Copyright &copy; <a href="http://fredwu.me/">Fred Wu</a></p>
+    https://github.com/fredwu/jquery-endless-scroll/blob/master/README.md
+  </div> -->
+  <!-- Backbutton -->
+    <!-- <a href="generator.html">
+    <img src="back.svg" alt="HTML tutorial">
+    </a> -->
+</body>
+
+</html>
