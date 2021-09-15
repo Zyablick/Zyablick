@@ -1,7 +1,7 @@
 $(document).ready(function() {
 // alert("Careful, you will get deep into the ocean");
 // alert("Are you sure you want to continue?");
-// alert("Okay, we warned you...");
+alert("Okay, we warned you...");
 $("#a").draggable();
 $("#fish1").draggable();
 $("#fish2").draggable();
